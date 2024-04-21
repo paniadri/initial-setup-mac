@@ -1,8 +1,5 @@
 # Homebrew Bundle to setup a computer with the must-have apps
 
-# 'brew tap'
-tap "homebrew/cask"
-
 # set arguments for all 'brew install --cask' commands
 cask_args appdir: "~/Applications", require_sha: true
 
@@ -11,6 +8,7 @@ cask_args appdir: "~/Applications", require_sha: true
 
 ## MacOS must-haves
 cask "google-chrome", args: { require_sha: false }
+cask "brave-browser"
 cask "visual-studio-code"
 cask "spotify", args: { require_sha: false }
 
@@ -28,7 +26,10 @@ cask "discord"
 tap "homebrew/cask-fonts"
 cask "font-victor-mono", args: { require_sha: false }
 
+## terminal
+brew "fzf"
 brew "tldr"
+brew "ffmpeg"
 
 ## work
 cask "slack" # https://slack.com/
