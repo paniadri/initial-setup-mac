@@ -1,1 +1,5 @@
 *.lock.json
+.vscode/
+
+### Mac OS ###
+.DS_Store
